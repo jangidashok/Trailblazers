@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Our company 'Trailblazers' is contributing to SHM by using ML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ashok_Jangir(19CE10012)">
+        <title>Trail Blazers</title>
+        <link rel="Shortcut icon" href="./iconofweb.ico">
+        <style>
+            body{
+                background-image:url("./about_company_bg1.jpg");
+                background-size:cover;
+            }
+            #sticktotop{
+                position:fixed;
+                top:0vw;
+                left:0.2vw;
+                width: 98.5vw;
+                height: 5vw;
+                border:0.05vw solid black;
+                border-radius:1vw;
+                background-color:white;
+                z-index:5;
+            }
+            #slogan{
+                position:absolute;
+                top: 0.6vw;
+                left: 1.5vw;
+            }
+            #logoplace{
+                position:absolute;
+                top:0vw;
+                left:7.5vw;
+            }
+            #top_option1{
+                position:absolute;
+                top:1.5vw;
+                left:22.5vw;
+                display:inline;
+                font-size:1.5vw;
+            } 
+            #top_option2{
+                position:absolute;
+                top:1.5vw;
+                right:5vw;
+                display:inline;
+                font-size:1.5vw;
+            }
+            .foranchor{
+                text-decoration:none;
+                margin-right:2vw;
+                font-size:1.5vw;
+                color:blue;
+            }
+            .logsign{
+                text-decoration:none;
+                color:white;
+                font-size:1.5vw;
+                display:inline-block;
+                width:8vw;
+                text-align:center;
+                background-color:red;
+                margin-left:2vw;
+                border-radius:1vw;
+                border:0.25vw solid black;
+            }
+            .logsign:hover{
+                background-color:crimson;
+            }
+            .content_heading_company{
+                font-size:3vw;
+                margin:0vw 30vw;
+                margin-top:9vw;
+                margin-bottom:4vw;
+                text-align:center;
+                color:crimson;
+                background-color:white;
+            }
+            .content_main_comapany{
+                margin:0vw 5vw;
+                font-size:1.75vw;
+                margin-bottom:1vw;
+                padding:3vw 9vw;
+                color:rgb(114, 84, 9);
+                background-color:white;
+                border-radius:2vw;
+                text-align:justify;
+            }
+            .outer_box{
+                display:inline-block;
+                width:25vw;
+                height:18vw;
+                text-align:center;
+                margin:5vw;
+                border:2px solid gray;
+                position:absolute;
+                background-color:crimson;
+                color:white;
+                opacity:0.8;
+            }
+            .heading_values{
+                font-size:1.5vw;
+                text-align:center;
+                margin:1vw;
+                color:yellow;
+            }
+            .inner_box{
+                font-size:1.2vw;
+                padding:1vw;
+                text-align:justify;
+            }
+            #box1{
+                top:16vw;
+                left:0vw
+            }
+            #box2{
+                top:16vw;
+                left:30vw;
+            }
+            #box3{
+                top:16vw;
+                left:60vw;
+                /* right:0vw; */
+            }
+            #box4{
+                top:38vw;
+                left:0vw;
+            }
+            #box5{
+                top:38vw;
+                left:30vw;
+            }
+            #box6{
+                top:38vw;
+                left:60vw;
+            }
+            #member_info{
+                font-size:1.5vw;
+                margin:3vw 14vw;
+            }
+            #footer{
+                background-color:crimson;
+                color:white;
+                position:relative;
+                height:15vw;
+            }
+            .icon_class{
+                width:2vw;
+                height:2vw;
+            }
+            #contact_us{
+                display:inline-block;
+                position:absolute;
+                top:-1vw;
+                left:2vw;
+                width:40vw;
+                margin-left:3vw;
+                margin-top:3vw;
+            }
+            #follow_us{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:46vw;
+            }
+            #more_about{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:80vw;
+            }
+            .footer_heading{
+                font-size:1.75vw;
+                margin-bottom:1vw;
+            }
+            .footer_explain{
+                font-size:1.5vw;
+                margin-bottom:0.5vw;
+            }
+            #about_company_part{
+                background-image:url('./company_bg.png');
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            .service_hover{
+                display:inline-block;
+                width:13vw;
+                height:2vw;
+                background-color:crimson;
+                font-size:1.4vw;
+                padding:0.7vw;
+                border:1px solid white;
+                text-decoration:none;
+                color:white;
+            }
+            #product_down{
+                display:none;
+                position:absolute;
+                top:1.9vw;
+                padding-top:1.65vw;
+            }
+            #down_here:hover #product_down{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sticktotop">
+            <!-- <img src="./slogan_img.png" style="width:10vw;height:4vw;" id="slogan"> -->
+            <div id="logoplace"><img src="./logo.png" style="width:7vw;height:5vw;"> </div>
+            <div id="top_option1">
+                    <a href="./index.html" class="foranchor">Home</a>
+                    <div style="display:inline-block;"  id="down_here" href="#product_part" class="foranchor">Service &#x25BE;
+                        <div id="product_down">
+                            <a class="service_hover" href="./product.html">Our Product</a><br>
+                            <a class="service_hover" href="./mission_and_vision.html">Our Mission&Vision</a>
+                        </div>
+                    </div>
+                    <a href="./technical_part.html" class="foranchor">Technical Part</a>
+                    <a href="./aboutus.html" class="foranchor">Our Team</a>
+                    <a href="./about_company.html" class="foranchor">About Company</a>
+            </div>
+            <div id="top_option2">
+                <a href="./login.html" class="logsign">Login</a>
+                <a href="./signuppage.html" class="logsign">Sign-Up</a>
+            </div>
+        </div>
+        <div style="margin-top:9vw;position:relative;">
+            <div>
+                <div class="content_heading_company">The Trailblazers Story</div>
+                <div class="content_main_comapany" style="padding:1vw 14vw;">Our company was founded in the year 2020 by a group of ten enthusiastic students who
+                    were determined to bring a change through their bright minds. The initial idea for
+                    building the company was introduced by their professor Mr. Baidurya Bhattacharya. It
+                    was the immense hard work and dedication put by these students into their company
+                    because of which it was able to actually compete with the real world and be in the
+                    position it is today.
+                    A trailblazer means someone who is the first to do something, an innovator. This was
+                    the perfect term to describe our founders. So, this is how our company got its name
+                    ‘Trailblazers’.
+                </div>
+            </div>
+            <div style="position:relative;">
+                <div class="content_heading_company">Our Values and Behaviours</div>
+                <div class="content_main_comapany">
+                    We aim to conduct our businesses ethically and in a manner that is respectful to
+                    all. We achieve this by aligning our goals with our six core values.
+                </div>
+                <div class="outer_box" id="box1">
+                    <div class="heading_values" style="margin-top:2vw;">Excellence:</div>
+                    <div class="inner_box">We are committed to
+                        excellence, in spirit and
+                        action. We believe
+                        everything that we do and
+                        everything we think can
+                        always get better. We see
+                        all of our activities in
+                        terms of our higher
+                        purpose and ideals, which
+                        drives our quest for
+                        excellence always.
+                    </div>
+                </div>
+                <div class="outer_box" id="box2">
+                    <div class="heading_values" style="margin-top:2vw;">Respect:</div>
+                    <div class="inner_box">We believe that without
+                        respecting all our customers
+                        and clients there can be no
+                        Trailblazers. We
+                        acknowledge that there may
+                        be a difference of
+                        perspectives but there must
+                        always be respect.
+                    </div>
+                </div>
+                <div class="outer_box" id="box3">
+                    <div class="heading_values" style="margin-top:2vw;">Ownership Mindset:</div>
+                    <div class="inner_box">
+                        We believe the success
+                        and reputation of the
+                        company is paramount.
+                        Having an ownership
+                        mind-set is fundamental
+                        to our existence. It
+                        ensures our strong
+                        commitment to the
+                        highest standards of
+                        safety and environment.
+                    </div>
+                </div>
+                <div class="outer_box" id="box4">
+                    <div class="heading_values" style="margin-top:2vw;">
+                        One Team:
+                    </div>
+                    <div class="inner_box">Whatever the strength of
+                        the individual, we will
+                        accomplish more
+                        together. We put the team
+                        ahead of our personal
+                        success and commit to
+                        building its capability. We
+                        trust each other to deliver
+                        on our respective
+                        obligations.
+                    </div>
+                </div>
+                <div class="outer_box" id="box5">
+                    <div class="heading_values" style="margin-top:2vw;">Integrity:</div>
+                    <div class="inner_box">Upholding our reputation is
+                        paramount as we are judged
+                        by how we act. We are
+                        committed to be truthful in all
+                        our actions. We respect the
+                        world in which we operate. It
+                        begins with compliance with
+                        laws and regulations. We
+                        hold ourselves to the highest
+                        ethical standards and
+                        behave in ways that earn the
+                        trust of others.
+                    </div>
+                </div>
+                <div class="outer_box" id="box6">
+                    <div class="heading_values" style="margin-top:2vw;">Customer Value:</div>
+                    <div class="inner_box">We believe the customer
+                        is the reason for our
+                        existence and the only
+                        guarantee to our future.
+                        Everything that we do
+                        must delight our
+                        customer, each time and
+                        always.
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:50vw;">
+                <div class="content_heading_company">Leadership and team:</div>
+                <div  class="content_main_comapany">Our company’s leadership team is passionate about providing quality
+                    service and innovative products. We foster a work environment that is
+                    committed to the task at hand and excel at seeking out professionals that
+                    take pride in the challenge to complete projects above client expectations.
+                </div>
+                <div id="member_info">
+                    ● Ashutosh Garg – CEO of Trailblazers<br>
+                    ● Ashok Jangir – CTO of Trailblazers<br>
+                    ● Nitesh Gudheniya – CTO of Trailblazers<br>
+                    ● Amaresh Pratihar – Director of Marketing<br>
+                    ● Pullagura Bhushanam – CFO of Trailblazers<br>
+                    ● Prashant Meena – Director of Legal<br>
+                    ● Yanamala Akhil Chand – Director of Marketing<br>
+                    ● Pradumn Krashna – Director of Legal<br>
+                    ● Prateek Kumar Amrawanshi – Chief financial officer<br>
+                    ● Shivani Soren – Director of R&D.<br>
+                </div>
+            </div>
+            <div>
+                <div class="content_heading_company">Our first ever Tweet:</div>
+                <div style="margin:2vw 30vw;font-size:1.5vw;border:1px solid black;padding:1vw;background-color:blanchedalmond;">It's hard to foresee the future but real and
+                    smart efforts can secure it. #building_health
+                    matters as of human. For check-up consult
+                    us. #trailblazers #startup #secure_life
+                    #safetyfirst #staysafe.<br>
+                    <img src="./tweet_imge.jpeg" style="width:36vw">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="contact_us">
+                <div class="footer_heading">Contact Us</div>
+                <div class="footer_explain"><img src="./address_icon.png" class="icon_class"> Main Building,IIT Kharagpur</div>
+                <div class="footer_explain"><img src="./call_icon.png" class="icon_class"> Phone:311 12 68 347</div> 
+                <div class="footer_explain"><img src="./email_icon.png" class="icon_class"> E-mail:trailblazers@gmail.com
+                </div>
+            </div>
+            <div id="follow_us">
+                <div class="footer_heading">Follow Us</div>
+                <div>
+                    <img src="./twitter_icon.png" class="icon_class">
+                    <img src="./fb_icon.png" class="icon_class">
+                    <img src="./insta_icon.png" class="icon_class">
+                </div>
+            </div>
+            <div id="more_about">
+                <div class="footer_heading">About Us</div>
+                <a href="./aboutus.html" style="text-decoration:none;color:white;font-size:1.5vw;">Team</a><br>
+                <a href="./about_company.html" style="text-decoration:none;color:white;font-size:1.5vw;">Company</a>
+            </div>
+        </div>
+    </body>
+</html>

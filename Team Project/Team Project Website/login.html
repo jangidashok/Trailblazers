@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Our company 'Trailblazers' is contributing to SHM by using ML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ashok_Jangir(19CE10012)">
+        <title>Trail Blazers</title>
+        <link rel="Shortcut icon" href="./iconofweb.ico">
+        <style>
+            body{
+                /* background-image:url('./login_bg.jpg');
+                background-size:cover;
+                background-repeat:no-repeat; */
+                background-color:rgb(255, 153, 0);
+            }
+            #whole_page{
+                background-image:url('./login_bg1.jpg');
+                background-size:cover;
+                position:absolute;
+                top:8vw;
+                left:15vw;
+                width:70vw;
+                height:35vw;
+                border-radius:1vw;
+            }
+            #sign_main{
+                display:inline-block;
+                position:absolute;
+                top:0vw;
+                margin-left:19vw;
+                width:34vw;
+                height:35vw;
+            }
+            .c_t_i{
+                border:none;
+                border-bottom:0.1vw solid crimson;
+                margin-bottom:2vw;
+                margin-top:0.3vw;
+                padding-right:2vw;
+                font-size:1.5vw;
+                background-color:rgb(0, 162, 255);
+            }
+            #statement{
+                font-size:1.5vw;
+                margin:2vw;
+                text-align:center;
+                color:white;
+            }
+            #after_login{
+                display:none;
+            }
+            #first_head{
+                display:inline-block;
+                width:70vw;
+                font-size:2.5vw;
+                left:0;
+                top:0;
+                text-align:center;
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+            #login_inform{
+                display:inline-block;
+                width:25vw;
+                right:0;
+                top:0;
+            }
+            td,th{
+                text-align:center;
+                font-size:1.5vw;
+                padding:0.5vw 8vw;
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="whole_page">
+            <div id="sign_main">
+                <div style="font-size:3.5vw;color:white;margin:2vw 9.5vw;">:: Login ::</div>
+                <div id="statement">Welcome back! Login to see status of your building.</div>
+                <div id="form_data">
+                <form style="margin-left:7vw;" method="dialog">
+                    <input class="c_t_i" type="email" placeholder="Email" id="email_cand" name="customer_email" required><br>
+                    <input class="c_t_i" type="password" placeholder="Password" id="password_cand" name="customer_password" required><br>
+                    <input onclick="login_info()" style="margin-left:4.5vw;font-size:1.5vw;margin-top:0.5vw;background-color:crimson;color:white;padding:0.5vw 1vw;cursor:pointer;" value="Continue &#8594;" type="submit" name="Login">
+                </form>
+                </div>
+                <div style="margin-top: 2vw;font-size: 1.3vw;color: white;margin-left: 6vw;">Don't have an account ? want to <a style="color:rgb(185, 109, 121);" href="./signuppage.html">sign-up</a></div>
+            </div>
+        </div>
+        <div id="after_login">
+            <div id="first_head">&#9880; Welcome &#9880;</div>
+            <div id="login_inform"><img src="./person_face.png" style="width:2vw;height:2vw;"><span style="font-size:1.2vw;" id="email_entered"></span></div>
+            <hr>
+            <div style="font-size:2vw;text-align:center;margin:2vw;">:: Your Building's last checkups details are given below ::</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SR No.</th>
+                        <th>Date of Check-Up</th>
+                        <th>Checking By</th>
+                        <th>status of Building</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            function login_info(){
+                let email_person = document.getElementById("email_cand").value;
+                let password_person = document.getElementById("password_cand").value;
+                if(!((email_person == '')||(password_person == ''))){
+                    let first_page = document.getElementById("whole_page");
+                    first_page.style.display = "none";
+                    let second_page = document.getElementById("after_login");
+                    second_page.style.display = "block";
+                    let person_detect = document.getElementById("email_entered");
+                    person_detect.innerHTML = email_person;
+                }
+            }
+        </script>
+    </body>
+</html>

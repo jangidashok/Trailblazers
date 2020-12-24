@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Our company 'Trailblazers' is contributing to SHM by using ML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ashok_Jangir(19CE10012)">
+        <title>Trail Blazers</title>
+        <link rel="Shortcut icon" href="./iconofweb.ico">
+        <style>
+            #sticktotop{
+                position:fixed;
+                top:0vw;
+                left:0.2vw;
+                width: 98.5vw;
+                height: 5vw;
+                border:0.05vw solid black;
+                border-radius:1vw;
+                background-color:white;
+                z-index:5;
+            }
+            #slogan{
+                position:absolute;
+                top: 0.6vw;
+                left: 1.5vw;
+            }
+            #logoplace{
+                position:absolute;
+                top:0vw;
+                left:7.5vw;
+            }
+            #top_option1{
+                position:absolute;
+                top:1.5vw;
+                left:22.5vw;
+                display:inline;
+                font-size:1.5vw;
+            } 
+            #top_option2{
+                position:absolute;
+                top:1.5vw;
+                right:5vw;
+                display:inline;
+                font-size:1.5vw;
+            }
+            .foranchor{
+                text-decoration:none;
+                margin-right:2vw;
+                font-size:1.5vw;
+                color:blue;
+            }
+            .logsign{
+                text-decoration:none;
+                color:white;
+                font-size:1.5vw;
+                display:inline-block;
+                width:8vw;
+                text-align:center;
+                background-color:red;
+                margin-left:2vw;
+                border-radius:1vw;
+                border:0.25vw solid black;
+            }
+            .logsign:hover{
+                background-color:crimson;
+            }
+            #home_part{
+                margin-top:5vw;
+            }
+            .img_bg{
+                width:98.4vw;
+                height:45vw;
+            }
+            #title_home{
+                position:absolute;
+                top:0vw;
+                left:2.5vw;
+                display:inline-block;
+                width:35vw;
+                font-size:3.5vw;
+                text-align:center;
+                margin-top:10vw;
+                line-height:5vw;
+                text-shadow:0.1vw 0.1vw crimson;
+            }
+            .for_heading{
+                text-align:center;
+                padding-top:5vw;
+                font-size:4vw;
+                text-shadow:0.1vw 0.1vw crimson;
+            }
+            .informative{
+                margin:4vw 10vw;
+            }
+            #footer{
+                background-color:crimson;
+                color:white;
+                position:relative;
+                height:15vw;
+            }
+            .icon_class{
+                width:2vw;
+                height:2vw;
+            }
+            #contact_us{
+                display:inline-block;
+                position:absolute;
+                top:-1vw;
+                left:2vw;
+                width:40vw;
+                margin-left:3vw;
+                margin-top:3vw;
+            }
+            #follow_us{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:46vw;
+            }
+            #more_about{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:80vw;
+            }
+            .footer_heading{
+                font-size:1.75vw;
+                margin-bottom:1vw;
+            }
+            .footer_explain{
+                font-size:1.5vw;
+                margin-bottom:0.5vw;
+            }
+            #about_company_part{
+                background-image:url('./company_bg.png');
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            .service_hover{
+                display:inline-block;
+                width:13vw;
+                height:2vw;
+                background-color:crimson;
+                font-size:1.4vw;
+                padding:0.7vw;
+                border:1px solid white;
+                text-decoration:none;
+                color:white;
+            }
+            #product_down{
+                display:none;
+                position:absolute;
+                top:1.9vw;
+                padding-top:1.65vw;
+            }
+            #down_here:hover #product_down{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sticktotop">
+            <!-- <img src="./slogan_img.png" style="width:10vw;height:4vw;" id="slogan"> -->
+            <div id="logoplace"><img src="./logo.png" style="width:7vw;height:5vw;"> </div>
+            <div id="top_option1">
+                    <a href="./index.html" class="foranchor">Home</a>
+                    <div style="display:inline-block;"  id="down_here" class="foranchor">Service &#x25BE;
+                        <div id="product_down">
+                            <a class="service_hover" href="./product.html">Our Product</a><br>
+                            <a class="service_hover" href="./mission_and_vision.html">Our Mission&Vision</a>
+                        </div>
+                    </div>
+                    <a href="./technical_part.html" class="foranchor">Technical Part</a>
+                    <a href="./aboutus.html" class="foranchor">Our Team</a>
+                    <a href="./about_company.html" class="foranchor">About Company</a>
+            </div>
+            <div id="top_option2">
+                <a href="./login.html" class="logsign">Login</a>
+                <a href="./signuppage.html" class="logsign">Sign-Up</a>
+            </div>
+        </div>
+        <div id="home_part">
+            <img class="img_bg" src="./home_bg1.png">
+            <div id="title_home">Welcome<br>Your building's health is our concern.</div>
+            <video style="position:absolute;left:7vw;top:29vw;width:25vw;" controls autoplay>
+                <source src="./marketing-trailblazers.mp4" type="video/mp4">
+            </video>
+            <hr>
+        </div>
+        <div class="informative">
+            <div>
+                <div style="font-size:3.5vw;color:teal;margin-bottom:1vw;">STRUCTURAL HEALTH MONITORING – Extend SAFETY with lower COSTS</div>
+                <div style="font-size:1.5vw;color:black;text-align:justify;">Detecting potential weaknesses in the building structure before damage occurs: “Predictive maintenance” is already a very familiar concept in industry.Sensors like piezoelectric accelerometer enable you to apply this concept to the condition monitoring of buildings, production systems and even vehicles.
+                    <br>
+                    Humans are creative and innovative. They build structures, even ones designed to last “for ever”: residential complexes, business districts, factories and power plants. And they develop machinery, aircraft and vehicles, subways, local and national transport infrastructure and bridges that cross not only valleys and rivers but also entire sea straits.
+                    <br>
+                    Safety is everything – whether we’re at home, at work or just out and about. And this is why all these human-made structures have to undergo regular inspection and maintenance.
+                    <br>
+                    After all, they are not only constantly exposed to the elements, but also subject to natural aging processes, geological changes and the wear and tear of daily use. And as disasters like the collapse in 2018 of the Polcevera viaduct in Genoa, Italy, so horrifyingly demonstrate, it is absolutely critical that buildings and structures undergo continuous monitoring for signs of material fatigue and wear as well as changes in infrastructural conditions.</div>
+            </div>
+        </div>
+        <img src="./obj1.jpg" style="width:80vw;margin:0vw 10vw;">
+        <div class="informative">
+            <div>
+                <div style="font-size:3.5vw;color:teal;margin-bottom:1vw;">Is STRUCTURAL HEALTH MONITORING is best way ?</div>
+                <div style="font-size:1.5vw;color:black;text-align:justify;">Structural health monitoring (SHM) refers to the process of implementing a
+                    damage detection and characterization strategy for engineering structures.
+                    <br>
+                    The SHM problem can be addressed in the context of a statistical pattern
+                    recognition.it can be broken down into four parts: (1) Operational
+                    Evaluation, (2) Data Acquisition and Cleansing, (3) Feature Extraction and
+                    Data Compression, and (4) Statistical Model.
+                    <br>
+                    This technology is embedding sensors in structures like bridges and
+                    aircraft. These sensors provide real time monitoring of various structural
+                    changes like stress and strain.The data provided by the sensors is usually
+                    transmitted to remote data acquisition centres.
+                    <br>
+                    The sensors include accelerometers, strain gauges, displacement
+                    transducers, level sensing stations, anemometers, temperature sensors
+                    and dynamic weight-in-motion sensors. They measure everything from
+                    tarmac temperature and strains in structural members to wind speed and
+                    the deflection and rotation of the kilometres of cables and any movement
+                    of the bridge decks and towers.
+                </div>
+            </div>
+        </div>
+        <img src="./f_p.jpg" style="width:80vw;margin:0vw 10vw;">
+        <div id="footer">
+            <div id="contact_us">
+                <div class="footer_heading">Contact Us</div>
+                <div class="footer_explain"><img src="./address_icon.png" class="icon_class"> Main Building,IIT Kharagpur</div>
+                <div class="footer_explain"><img src="./call_icon.png" class="icon_class"> Phone:311 12 68 347</div> 
+                <div class="footer_explain"><img src="./email_icon.png" class="icon_class"> E-mail:trailblazers@gmail.com</div>
+            </div>
+            <div id="follow_us">
+                <div class="footer_heading">Follow Us</div>
+                <div>
+                    <img src="./twitter_icon.png" class="icon_class">
+                    <img src="./fb_icon.png" class="icon_class">
+                    <img src="./insta_icon.png" class="icon_class">
+                </div>
+            </div>
+            <div id="more_about">
+                <div class="footer_heading">About Us</div>
+                <a href="./aboutus.html" style="text-decoration:none;color:white;font-size:1.5vw;">Team</a><br>
+                <a href="./about_company.html" style="text-decoration:none;color:white;font-size:1.5vw;">Company</a>
+            </div>
+        </div>
+    </body>
+</html>
