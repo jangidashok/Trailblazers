@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Our company 'Trailblazers' is contributing to SHM by using ML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ashok_Jangir(19CE10012)">
+        <title>Trail Blazers</title>
+        <link rel="Shortcut icon" href="./iconofweb.ico">
+        <style>
+            #sticktotop{
+                position:fixed;
+                top:0vw;
+                left:0.2vw;
+                width: 98.5vw;
+                height: 5vw;
+                border:0.05vw solid black;
+                border-radius:1vw;
+                background-color:white;
+                z-index:5;
+            }
+            #slogan{
+                position:absolute;
+                top: 0.6vw;
+                left: 1.5vw;
+            }
+            #logoplace{
+                position:absolute;
+                top:0vw;
+                left:7.5vw;
+            }
+            #top_option1{
+                position:absolute;
+                top:1.5vw;
+                left:22.5vw;
+                display:inline;
+                font-size:1.5vw;
+            } 
+            #top_option2{
+                position:absolute;
+                top:1.5vw;
+                right:5vw;
+                display:inline;
+                font-size:1.5vw;
+            }
+            .foranchor{
+                text-decoration:none;
+                margin-right:2vw;
+                font-size:1.5vw;
+                color:blue;
+            }
+            .logsign{
+                text-decoration:none;
+                color:white;
+                font-size:1.5vw;
+                display:inline-block;
+                width:8vw;
+                text-align:center;
+                background-color:red;
+                margin-left:2vw;
+                border-radius:1vw;
+                border:0.25vw solid black;
+            }
+            .logsign:hover{
+                background-color:crimson;
+            }
+            #technical_part{
+                background-image:url("./technical_bg.png");
+                background-size:cover;
+                margin-top:5vw;
+                padding-bottom:2vw;
+            }
+            .heading_technical{
+                font-size:3vw;
+                text-align:center;
+                color:white;
+                padding-top:5vw;
+            }
+            .description_of_head{
+                font-size:2vw;
+                margin:2vw;
+                padding:0vw 10vw;
+                color:rgb(172, 252, 252);
+                text-align:justify;
+            }
+            #footer{
+                background-color:crimson;
+                color:white;
+                position:relative;
+                height:15vw;
+            }
+            .icon_class{
+                width:2vw;
+                height:2vw;
+            }
+            #contact_us{
+                display:inline-block;
+                position:absolute;
+                top:-1vw;
+                left:2vw;
+                width:40vw;
+                margin-left:3vw;
+                margin-top:3vw;
+            }
+            #follow_us{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:46vw;
+            }
+            #more_about{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:80vw;
+            }
+            .footer_heading{
+                font-size:1.75vw;
+                margin-bottom:1vw;
+            }
+            .footer_explain{
+                font-size:1.5vw;
+                margin-bottom:0.5vw;
+            }
+            #about_company_part{
+                background-image:url('./company_bg.png');
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            .service_hover{
+                display:inline-block;
+                width:13vw;
+                height:2vw;
+                background-color:crimson;
+                font-size:1.4vw;
+                padding:0.7vw;
+                border:1px solid white;
+                text-decoration:none;
+                color:white;
+            }
+            #product_down{
+                display:none;
+                position:absolute;
+                top:1.9vw;
+                padding-top:1.65vw;
+            }
+            #down_here:hover #product_down{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sticktotop">
+            <!-- <img src="./slogan_img.png" style="width:10vw;height:4vw;" id="slogan"> -->
+            <div id="logoplace"><img src="./logo.png" style="width:7vw;height:5vw;"> </div>
+            <div id="top_option1">
+                    <a href="./index.html" class="foranchor">Home</a>
+                    <div style="display:inline-block;"  id="down_here" class="foranchor">Service &#x25BE;
+                        <div id="product_down">
+                            <a class="service_hover" href="./product.html">Our Product</a><br>
+                            <a class="service_hover" href="./mission_and_vision.html">Our Mission&Vision</a>
+                        </div>
+                    </div>
+                    <a href="./technical_part.html" class="foranchor">Technical Part</a>
+                    <a href="./aboutus.html" class="foranchor">Our Team</a>
+                    <a href="./about_company.html" class="foranchor">About Company</a>
+            </div>
+            <div id="top_option2">
+                <a href="./login.html" class="logsign">Login</a>
+                <a href="./signuppage.html" class="logsign">Sign-Up</a>
+            </div>
+        </div>
+        <div id="technical_part">
+            <div class="heading_technical">How is product possible ?</div>
+            <div class="description_of_head">
+                Every structure in the absence of any driving or damping force tends to oscillate and
+                vibrate in a particular frequency also called as <b>Natural frequency</b> of the structure.<br>
+                It has been shown, by analysing two-year-long continuous records from the Caltech’s
+                Millikan Library, (Clinton et al. 2004).<br>
+                Natural frequencies of a structure(building) can change significantly after an extreme
+                event, such as an <b>earthquake</b> or due to environmental factors such as <b>rainfall, wind speed, temperature and aging</b>
+                , and therefore can be strongly related to <b>change</b> in
+                <b>natural frequencies</b> of a building and hence to the damages in the structures.<br>
+                This makes it crucial that the <b>modal properties</b> like natural frequencies are accurately
+                estimated and continuously tracked to detect any changes by the <b>Structural Health Monitoring (SHM) system.</b>
+            </div>
+            <img src="./tech1.jpeg" style="width:75vw;margin:1vw 12vw;opacity:0.8;">
+            <div class="description_of_head">
+                Advancements in sensor technologies such as <b>piezoelectric sensors</b> not only
+                improves the accuracy of sensing data but also have enabled economically affordable
+                sensor installations for long-term monitoring of civil engineering structures. Therefore,
+                now we can install hundreds to thousands of sensors to collect valuable data about the
+                structure.
+            </div>
+            <img src="./tech2.jpeg" style="width:27vw;margin:1vw 16vw;opacity:0.8;">
+            <img src="./tech3.jpeg" style="width:30vw;margin:1vw -8vw;opacity:0.8;">
+            <div class="description_of_head">
+                To classify the huge amount of data into healthy and unhealthy status we use the
+                techniques and algorithms of <b>machine learning</b>.<br>
+                <b>Machine learning</b> in the context of SHM can be described as the task of generating
+                knowledge from past experiences (or, more precisely, from collected sensor data),
+                focusing on the <b>prediction</b> of new sensor data. A variety of machine learning
+                techniques has been proposed in structural health monitoring (SHM) systems. In which
+                we have taken the support of <b>Support Vector Machine</b> to solve our purpose.<br>
+                <b>Support Vector Machines (SVM)</b> are a particular <e>classification strategy</e>. It mainly
+                works by transforming the training dataset into a higher dimension, which is then
+                inspected for the optimal separation boundary. In SVMs, these boundaries are referred
+                to as <b>hyperplanes</b>, which are identified by locating <b>support vectors</b>, and their
+                margins, which are the lines parallel to the hyperplane defined by the shortest distance
+                between a hyperplane and its support vectors. SVMs are able to classify both <b>linear</b>
+                and <b>nonlinear data</b>.
+                Since <b>vibration frequencies</b> of architectural or mechanical structures imply their health
+                status, we plot vibration frequency data collected by sensors, and after <b>training</b> the
+                SVM model to classify data into the healthy and unhealthy status, the data coming from
+                sensors are <b>tested</b> and <b>classified</b> into a certain category which indicates health status
+                of monitoring structure.<br>
+                <img src="./tech5.jpeg" style="width:50vw;margin:1vw 12vw;opacity:0.8;">
+            </div>
+            <div  class="heading_technical">Our system is driven by SVM Algorithm !</div>
+            <div class="description_of_head">
+                A Support Vector Machine is yet another supervised machine learning algorithm. It can
+                be used for both regression and classification purposes. But SVMs are more commonly
+                used in classification problems.<br>
+                Support Vectors are the data points nearest to the hyperplane, the points of our data set
+                which if removed, would alter the position of the dividing hyperplane. As we can see that
+                there can be many hyperplanes which can segregate the two classes, the hyperplane
+                that we would choose is the one with the highest margin.<br>
+            </div>
+            <div class="description_of_head">
+                GRAPH : ONLY TO THOSE WHICH HAS LARGE MARGIN /SPACE
+            </div>
+            <img src="./tech6.jpeg" style="width:75vw;margin:1vw 12vw;opacity:0.8;">
+            <div class="description_of_head">
+                GRAPH : IN THIS WE WILL SELECT TO THOSE WHICH HAS LARGE MARGIN
+            </div>
+            <img src="./tech7.jpeg" style="width:75vw;margin:1vw 12vw;opacity:0.8;">
+            <div class="description_of_head">
+                GRAPH : THAT IS C WHICH IS BEST FOR SEPARATING THESE TWO DATA
+            </div>
+            <img src="./tech8.jpeg" style="width:75vw;margin:1vw 12vw;opacity:0.8;">
+            <div class="description_of_head">
+                We are not always lucky to have a dataset which is linearly separable by a hyperplane.
+                Fortunately, SVM is capable of fitting non-linear boundaries using a simple and elegant
+                method known as kernel trick.<br>
+            </div>
+            <div class="description_of_head">
+                In simple words, it projects the data into higher dimension where it can be separated by
+                a hyperplane and then project back to lower dimension
+            </div>
+        </div>
+        <div id="footer">
+            <div id="contact_us">
+                <div class="footer_heading">Contact Us</div>
+                <div class="footer_explain"><img src="./address_icon.png" class="icon_class"> Main Building,IIT Kharagpur</div>
+                <div class="footer_explain"><img src="./call_icon.png" class="icon_class"> Phone:311 12 68 347</div> 
+                <div class="footer_explain"><img src="./email_icon.png" class="icon_class"> E-mail:trailblazers@gmail.com
+                </div>
+            </div>
+            <div id="follow_us">
+                <div class="footer_heading">Follow Us</div>
+                <div>
+                    <img src="./twitter_icon.png" class="icon_class">
+                    <img src="./fb_icon.png" class="icon_class">
+                    <img src="./insta_icon.png" class="icon_class">
+                </div>
+            </div>
+            <div id="more_about">
+                <div class="footer_heading">About Us</div>
+                <a href="./aboutus.html" style="text-decoration:none;color:white;font-size:1.5vw;">Team</a><br>
+                <a href="./about_company.html" style="text-decoration:none;color:white;font-size:1.5vw;">Company</a>
+            </div>
+        </div>
+    </body>
+</html>

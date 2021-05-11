@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Our company 'Trailblazers' is contributing to SHM by using ML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ashok_Jangir(19CE10012)">
+        <title>Trail Blazers</title>
+        <link rel="Shortcut icon" href="./iconofweb.ico">
+        <style>
+            #sticktotop{
+                position:fixed;
+                top:0vw;
+                left:0.2vw;
+                width: 98.5vw;
+                height: 5vw;
+                border:0.05vw solid black;
+                border-radius:1vw;
+                background-color:white;
+                z-index:5;
+            }
+            #slogan{
+                position:absolute;
+                top: 0.6vw;
+                left: 1.5vw;
+            }
+            #logoplace{
+                position:absolute;
+                top:0vw;
+                left:7.5vw;
+            }
+            #top_option1{
+                position:absolute;
+                top:1.5vw;
+                left:22.5vw;
+                display:inline;
+                font-size:1.5vw;
+            } 
+            #top_option2{
+                position:absolute;
+                top:1.5vw;
+                right:5vw;
+                display:inline;
+                font-size:1.5vw;
+            }
+            .foranchor{
+                text-decoration:none;
+                margin-right:2vw;
+                font-size:1.5vw;
+                color:blue;
+            }
+            .logsign{
+                text-decoration:none;
+                color:white;
+                font-size:1.5vw;
+                display:inline-block;
+                width:8vw;
+                text-align:center;
+                background-color:red;
+                margin-left:2vw;
+                border-radius:1vw;
+                border:0.25vw solid black;
+            }
+            .logsign:hover{
+                background-color:crimson;
+            }
+            .for_heading{
+                text-align:center;
+                padding-top:3vw;
+                font-size:4vw;
+                text-shadow:0.1vw 0.1vw crimson;
+            }
+            #product_part{
+                margin-top:5vw;
+                position:relative;
+                background-image:url("./product_bg.png");
+                background-size:cover;
+            }
+            .box_design{
+                margin:2vw 4vw;
+                border:2px soild cyan;
+                background-color:crimson;
+                border-radius:1vw;
+                color:white;
+                text-align:left;
+                font-size:2vw;
+                padding:2vw 2vw;
+                box-sizing:border-box;
+                opacity:0.8;
+            }
+            .new_work{
+                display:inline-block;
+                border-radius:2vw;
+            }
+            .column_info{
+                position:relative;
+                display:inline-block;
+                width:40vw;
+                /* background-color:tomato; */
+                color:white;
+                margin-bottom:3vw;
+            }
+            #column_o{
+                left:5vw;
+                top:0vw;
+            }
+            #column_t{
+                left:12vw;
+                top:0vw;
+            }
+            #footer{
+                background-color:crimson;
+                color:white;
+                position:relative;
+                height:15vw;
+            }
+            .icon_class{
+                width:2vw;
+                height:2vw;
+            }
+            #contact_us{
+                display:inline-block;
+                position:absolute;
+                top:-1vw;
+                left:2vw;
+                width:40vw;
+                margin-left:3vw;
+                margin-top:3vw;
+            }
+            #follow_us{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:46vw;
+            }
+            #more_about{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:80vw;
+            }
+            .footer_heading{
+                font-size:1.75vw;
+                margin-bottom:1vw;
+            }
+            .footer_explain{
+                font-size:1.5vw;
+                margin-bottom:0.5vw;
+            }
+            #about_company_part{
+                background-image:url('./company_bg.png');
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            .service_hover{
+                display:inline-block;
+                width:13vw;
+                height:2vw;
+                background-color:crimson;
+                font-size:1.4vw;
+                padding:0.7vw;
+                border:1px solid white;
+                text-decoration:none;
+                color:white;
+            }
+            #product_down{
+                display:none;
+                position:absolute;
+                top:1.9vw;
+                padding-top:1.65vw;
+            }
+            #down_here:hover #product_down{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sticktotop">
+            <!-- <img src="./slogan_img.png" style="width:10vw;height:4vw;" id="slogan"> -->
+            <div id="logoplace"><img src="./logo.png" style="width:7vw;height:5vw;"> </div>
+            <div id="top_option1">
+                    <a href="./index.html" class="foranchor">Home</a>
+                    <div style="display:inline-block;"  id="down_here" href="#product_part" class="foranchor">Service &#x25BE;
+                        <div id="product_down">
+                            <a class="service_hover" href="./product.html">Our Product</a><br>
+                            <a class="service_hover" href="./mission_and_vision.html">Our Mission&Vision</a>
+                        </div>
+                    </div>
+                    <a href="./technical_part.html" class="foranchor">Technical Part</a>
+                    <a href="./aboutus.html" class="foranchor">Our Team</a>
+                    <a href="./about_company.html" class="foranchor">About Company</a>
+            </div>
+            <div id="top_option2">
+                <a href="./login.html" class="logsign">Login</a>
+                <a href="./signuppage.html" class="logsign">Sign-Up</a>
+            </div>
+        </div>    
+        <div id="product_part">
+            <!-- <div class="for_heading">Ask yourself !</div> -->
+            <div class="box_design" id="product_box_1" style="margin-top:8vw;">
+                Q. Are you living in a house which is older than 35 years ??<br>
+                If yes, then we can ensure your higher degree of safety than what you are having at<br>
+                present time.
+            </div>
+            <div class="box_design" id="product_box_2">
+                Q. Are you going to make a new building for residence ??<br>
+                If yes, then we can provide a long life safety measure for your building at regular<br>
+                intervals.
+            </div>
+            <div class="box_design" id="product_box_3">
+                Q. Have you encountered an earthquake in recent time and worried about your<br>
+                building??<br>
+                If yes, then we can take off your worries.
+            </div>
+            <div class="box_design" id="product_box_3">
+                Q. You build a new building and want to ensure there is no fault in any part ??<br>
+                If yes, then we can help you.
+            </div>
+            <div class="box_design" id="product_box_3">
+                Q. You buy a new house but not having much idea about its construction quality??<br>
+                If yes, then it’s nice to select our service.
+
+            </div>
+            <video style="width:70vw;margin:7.5vw 15vw;" controls autoplay>
+                <source src="./product_video.mp4" type="video/mp4">
+            </video>
+            <div class="for_heading" style="margin:3vw 30vw;margin-top:4vw;padding:2vw;background-color:white;opacity:0.9;">What we do !</div>
+            <div style="margin:2vw 5vw;font-size:2vw;padding:2vw 2vw;border:0.05vw solid black;background-color:blue;color:white;border-radius:0.5vw;opacity:0.9;text-align:justify;">Here, our company service is for you to find any type of fault/damage that has entered
+                your building at time of build or later due to any circumstances. Our big team will going
+                to ensure your safety measurement.Safety level measurement with accuracy was
+                always important but it was not possible earlier to do this but now we are having latest
+                technologies which are helping to do that part so we make our product with new
+                emerging technology of Machine Learning.Our satisfactory results make itself very
+                reliable for others to follow this.
+            </div>
+            <div style="margin:0vw 0vw;margin-top:8vw;">
+                <div class="new_work">
+                    <div class="column_info" id="column_o">
+                        <div style="border-top-left-radius:1vw;border-top-right-radius:1vw;text-align:center;font-size:2vw;margin:0vw 0vw;background-color:turquoise;padding:1vw;">
+                            Why should you select our service ?
+    
+                        </div>
+                        <div style="border-bottom-left-radius:1vw;border-bottom-right-radius:1vw;background-color:tomato;text-align:left;font-size:1.5vw;padding:1vw 2vw;text-align:justify;">
+                            Well, we are human beings so making mistakes is nothing new but if we know our
+                            mistakes or make ourselves unaware of happening in the near future then we are
+                            certainly doing the wrong thing.<br>
+                            We will detect the health of your building by using scientific calculation with a computer
+                            so chances of making mistakes in finding any defect is no more tolerable. We are giving
+                            our satisfactory services for the big community and helped many so you could be the
+                            next one to get benefitted by this.
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="column_info" id="column_t">
+                    <div class="new_work">
+                        <div style="border-top-left-radius:1vw;border-top-right-radius:1vw;text-align:center;font-size:2vw;margin:0vw 0vw;background-color:turquoise;padding:1vw;">
+                            Is our product reliable ?
+                        </div>
+                        <div style="border-bottom-left-radius:1vw;border-bottom-right-radius:1vw;background-color:tomato;text-align:left;font-size:1.5vw;padding:1vw 2vw;text-align:justify;">
+                            Yes, we created our product by using a Machine learning algorithm and we trained our
+                            product with a very large number of data-set and having six labels whether your building
+                            is healthy or not ,if not then what is the level of damage on scale of 1-5. Our training of
+                            products on large data sets made our product reliable on a very higher level. We also
+                            predict results for a number of cases and find accuracy with 99.6 percentages in even
+                            the first attempt. Our customers give high ratings after they know they were really
+                            having damage in their building and made themself safe before anything unwanted.
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="contact_us">
+                <div class="footer_heading">Contact Us</div>
+                <div class="footer_explain"><img src="./address_icon.png" class="icon_class"> Main Building,IIT Kharagpur</div>
+                <div class="footer_explain"><img src="./call_icon.png" class="icon_class"> Phone:311 12 68 347</div> 
+                <div class="footer_explain"><img src="./email_icon.png" class="icon_class"> E-mail:trailblazers@gmail.com
+                </div>
+            </div>
+            <div id="follow_us">
+                <div class="footer_heading">Follow Us</div>
+                <div>
+                    <img src="./twitter_icon.png" class="icon_class">
+                    <img src="./fb_icon.png" class="icon_class">
+                    <img src="./insta_icon.png" class="icon_class">
+                </div>
+            </div>
+            <div id="more_about">
+                <div class="footer_heading">About Us</div>
+                <a href="./aboutus.html" style="text-decoration:none;color:white;font-size:1.5vw;">Team</a><br>
+                <a href="./about_company.html" style="text-decoration:none;color:white;font-size:1.5vw;">Company</a>
+            </div>
+        </div>
+    </body>
+</html>

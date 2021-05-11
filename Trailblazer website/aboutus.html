@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="We 'Trailblazers' are contributing to SHM by using ML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ashok_Jangir(19CE10012)">
+        <title>Trail Blazers</title>
+        <link rel="Shortcut icon" href="./iconofweb.ico">
+        <style>
+        body{
+            background-image:url("./more_about_bg5.jpg");
+            background-size:cover;
+            /* transition-duration:2s; */
+        }
+        #sticktotop{
+                position:fixed;
+                top:0vw;
+                left:0.2vw;
+                width: 98.5vw;
+                height: 5vw;
+                border:0.05vw solid black;
+                border-radius:1vw;
+                background-color:white;
+                z-index:5;
+            }
+        #slogan{
+                position:absolute;
+                top: 0.6vw;
+                left: 1.5vw;
+            }
+        #logoplace{
+                position:absolute;
+                top:0vw;
+                left:7.5vw;
+            }
+        #top_option1{
+                position:absolute;
+                top:1.5vw;
+                left:22.5vw;
+                display:inline;
+                font-size:1.5vw;
+            } 
+        #top_option2{
+                position:absolute;
+                top:1.5vw;
+                right:5vw;
+                display:inline;
+                font-size:1.5vw;
+            }
+        .foranchor{
+                text-decoration:none;
+                margin-right:2vw;
+                font-size:1.5vw;
+                color:blue;
+            }
+        .logsign{
+                text-decoration:none;
+                color:white;
+                font-size:1.5vw;
+                display:inline-block;
+                width:8vw;
+                text-align:center;
+                background-color:red;
+                margin-left:2vw;
+                border-radius:1vw;
+                border:0.25vw solid black;
+            }
+        .logsign:hover{
+                background-color:crimson;
+            }
+        .box_column{
+            display:inline-block;
+            width:20vw;
+            border:1px solid blue;
+            border-radius:10px;
+            background-color:rgb(124, 116, 116);
+            color:rgb(247, 247, 247);
+        }
+        #n1{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            z-index:2;
+        }
+        #n2{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #n3{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #n4{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #n5{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #n6{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #n7{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #n8{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #n9{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #n10{
+            position:absolute;
+            top:55vw;
+            left:40vw;
+            transition-duration:2s;
+        }
+        #per_des{
+            background-color:teal;
+            opacity:0.9;
+            border-radius:1vw;
+            margin:2vw 5vw;
+        }
+        #footer{
+                background-color:crimson;
+                color:white;
+                position:relative;
+                height:15vw;
+        }
+        .icon_class{
+                width:2vw;
+                height:2vw;
+        }
+        #contact_us{
+                display:inline-block;
+                position:absolute;
+                top:-1vw;
+                left:2vw;
+                width:40vw;
+                margin-left:3vw;
+                margin-top:3vw;
+        }
+        #follow_us{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:46vw;
+            }
+        #more_about{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:80vw;
+            }
+        .footer_heading{
+                font-size:1.75vw;
+                margin-bottom:1vw;
+            }
+        .footer_explain{
+                font-size:1.5vw;
+                margin-bottom:0.5vw;
+            }
+        #about_company_part{
+                background-image:url('./company_bg.png');
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            .service_hover{
+                display:inline-block;
+                width:13vw;
+                height:2vw;
+                background-color:crimson;
+                font-size:1.4vw;
+                padding:0.7vw;
+                border:1px solid white;
+                text-decoration:none;
+                color:white;
+            }
+            #product_down{
+                display:none;
+                position:absolute;
+                top:1.9vw;
+                padding-top:1.65vw;
+            }
+        #down_here:hover #product_down{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sticktotop">
+            <!-- <img src="./slogan_img.png" style="width:10vw;height:4vw;" id="slogan"> -->
+            <div id="logoplace"><img src="./logo.png" style="width:7vw;height:5vw;"> </div>
+            <div id="top_option1">
+                    <a href="./index.html" class="foranchor">Home</a>
+                    <div style="display:inline-block;"  id="down_here" class="foranchor">Service &#x25BE;
+                        <div id="product_down">
+                            <a class="service_hover" href="./product.html">Our Product</a><br>
+                            <a class="service_hover" href="./mission_and_vision.html">Our Mission&Vision</a>
+                        </div>
+                    </div>
+                    <a href="./technical_part.html" class="foranchor">Technical Part</a>
+                    <a href="./aboutus.html" class="foranchor">Our Team</a>
+                    <a href="./about_company.html" class="foranchor">About Company</a>
+            </div>
+            <div id="top_option2">
+                <a href="./login.html" class="logsign">Login</a>
+                <a href="./signuppage.html" class="logsign">Sign-Up</a>
+            </div>
+        </div>
+        <div style="text-align:center;background-color:rgb(91, 107, 138);color:white;padding:2vw;font-size:2vw;margin-top:6vw;">:: Welcome to our Family ::</div>
+        <div style="text-align:center;background-color:rgb(98, 98, 128);color:white;padding:1vw 5vw;font-size:1.5vw;margin:3vw;">Company was founded by 10 Undergraduate students of Indian Institute of Technology,Kharagpur who are persuing B.Tech in Civil Engineering.Now all ten student are working in different sections of this company.</div>
+        <div style="text-align:center;font-size:2.5vw;color:white;margin:5vw;">&#9880; Lets do a Introduction &#9880;</div>
+        <div class="box_column" id="n1" class="n_all">
+            <div style="text-align:center;font-size:2vw;">CEO of Company</div>
+            <img src="./Ashutosh-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.5vw;">Ashutosh Garg (19CE10013)</div>
+        </div>
+        <div class="box_column" id="n2" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Chief Technology Officer</div>
+            <img src="./Ashok-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;">Ashok Jangir (19CE10012)</div>
+        </div>
+        <div class="box_column" id="n3" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Chief Technology Officer</div>
+            <img src="./Nitesh-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;">Nitesh Gudhenia (19CE10046)</div>
+        </div>
+        <div class="box_column" id="n4" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Director of R&D</div>
+            <img src="./Shivani-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;">Shivani Soren (19CE30019)</div>
+        </div>
+        <div class="box_column" id="n5" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Chief Financial Officer</div>
+            <img src="./Prateek-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;">Prateek K. Amrawanshi (19CE30015)</div>
+        </div>
+        <div class="box_column" id="n6" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Chief Financial Officer</div>
+            <img src="./bhusanam-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;">Pullagura Bhusanam (19CE10053)</div>
+        </div>
+        <div class="box_column" id="n7" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Director of Legal</div>
+            <img src="./Pradumn-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;">Pradumn Krashna (19CE10075)</div>
+        </div>
+        <div class="box_column" id="n8" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Director of Legal</div>
+            <img src="./Prashant-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;">Prashant Meena (19CE10050)</div>
+        </div>
+        <div class="box_column" id="n9" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Director of Marketing</div>
+            <img src="./Akhil-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;"> Y. Akhil Chand (19CE10072)</div>
+        </div>
+        <div class="box_column" id="n10" class="n_all">
+            <div style="text-align:center;font-size:1.7vw;">Director of Marketing</div>
+            <img src="./Amaresh-removebg-preview.png" style="width:10vw;height:10vw;margin-left:5vw;">
+            <div style="text-align:center;font-size:1.3vw;">Amaresh Pratihar (18CE10008)</div>
+        </div>
+        <div id="personal_description" style="margin-top:70vw;">
+            <div style="font-size:3vw;text-align:center;color:white;margin:2vw;background-color:slategray;padding:2vw;">: Description of Team Members :</div>
+            <div style="font-size:2vw;padding:7vw 10vw;color:white;text-align:justify;" id="per_des">
+                <b>Mr. Ashutosh Garg</b>, CEO is the Driving Force behind the Company. He is currently on the path
+                of becoming a civil engineer, pursuing B.Tech in Civil Engineering from IIT Kharagpur. He
+                dutifully plays his role as the most important persona of the company. He is excellent in his work
+                of providing inspired leadership to our executive team, establishing a great working relationship
+                with the board of directors and setting a course for company strategy.<br><br>
+                <b>Mr. Ashok Jangir</b> is the CTO of our company. He is presently studying Civil Engineering in IIT
+                Kharagpur. He is very talented and is an aspiring Engineer. He brings the proper balance
+                between business and technology strategy by effectively connecting the outside world with the
+                inside through distilling information into the key trends that indicate where the company needs
+                to go next, thus aligning the company’s technology strategy with its business strategy.<br><br>
+                <b>Mr. Nitesh Gudheniya</b> is the CTO of our company. He is doing his B.Tech in Civil Engineering
+                from IIT Kharagpur. He is a skilled developer with strong expertise in programming and Machine
+                Learning. He shapes the technology strategy and manages the engineering efforts within our
+                company. He is responsible for making sure that the company continues to have the best
+                technology offering in a dynamically-evolving highly-competitive space.<br><br>
+                <b>Ms. Shivani Soren</b>Ms. Shivani Soren is the Director of R&D of our company. She is currently pursuing her
+                Integrated bachelor’s and master’s dual degree in Civil Engineering from IIT Kharagpur. She is
+                responsible for the interaction with Lines of Business in team approach to translate company
+                strategic vision into successful R&D products and provides required current feedback to R&D
+                advisory board about current and future path of R&D organization’s roadmap.<br><br>
+                <b>Mr. Pradumn Krashna</b> is the Director of Legal of our company. He is doing his B.Tech in Civil
+                Engineering from IIT Kharagpur. His task is to analyse and identify the legal risks and
+                implications of all of our company’s business transactions, keeping the management in all
+                departments of the company informed of developments in laws and regulations that can
+                potentially affect the company.<br><br>
+                <b>Mr. Prashant Meena</b> is the Director of Legal of our company. He is a student of IIT Kharagpur,
+                studying Civil Engineering. He is responsible for providing management with effective legal
+                advice on business issues and company strategies, ensuring the company operates in
+                compliance with applicable laws and regulations, and helping prepare briefs, complaints,
+                motions and other court documents.<br><br>
+                <b>Mr. Pullagura Bhushanam</b> is the CFO of our company. He is presently studying Civil
+                Engineering in IIT Kharagpur. He is a professional in his work. He prepares all of the company’s
+                historical financial reports. He is responsible for ensuring all reporting is prepared in an accurate
+                and timely manner for our company.<br><br>
+                <b>Mr. Prateek Kumar Amrawanshi</b> is the CFO of our company. He is currently enrolled in a dual
+                degree course in Civil Engineering in IIT Kharagpur. He is creative, understands best practices,
+                and knows how to create more value for our company. His responsibilities are to take the
+                financial data and use it to influence operational decision-making and strategy of our company.<br><br>
+                <b>Mr. Amaresh Pratihar</b> is the Director of Marketing of our company. He is currently pursuing his
+                bachelor’s degree in Civil Engineering from IIT Kharagpur. His responsibility involves assessing
+                and creating our company’s marketing plan and marketing strategy, and then planning,
+                coordinating and directing effective marketing efforts.<br><br>
+                <b>Mr. Yanamala Akhil Chand</b> is the Director of Marketing of our company. He is a student of IIT
+                Kharagpur, studying Civil Engineering. He is exemplary at his work. His primary responsibilities
+                are to strategize and analyse, manage colleagues and clients, and guide the development of
+                marketing campaigns.<br>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="contact_us">
+                <div class="footer_heading">Contact Us</div>
+                <div class="footer_explain"><img src="./address_icon.png" class="icon_class"> Main Building,IIT Kharagpur</div>
+                <div class="footer_explain"><img src="./call_icon.png" class="icon_class"> Phone:311 12 68 347</div> 
+                <div class="footer_explain"><img src="./email_icon.png" class="icon_class"> E-mail:trailblazers@gmail.com
+                </div>
+            </div>
+            <div id="follow_us">
+                <div class="footer_heading">Follow Us</div>
+                <div>
+                    <img src="./twitter_icon.png" class="icon_class">
+                    <img src="./fb_icon.png" class="icon_class">
+                    <img src="./insta_icon.png" class="icon_class">
+                </div>
+            </div>
+            <div id="more_about">
+                <div class="footer_heading">About Us</div>
+                <a href="./aboutus.html" style="text-decoration:none;color:white;font-size:1.5vw;">Team</a><br>
+                <a href="./about_company.html" style="text-decoration:none;color:white;font-size:1.5vw;">Company</a>
+            </div>
+        </div>
+        <script>
+            let dim_direction = ["translate(0vw,-20vw)","translate(30vw,0vw)","translate(0vw,20vw)","translate(-30vw,0vw)"];
+            let a = 2,b = 3,c = 4,d = 5;
+            setInterval(() => {
+                if(!((a != 11)&&(b != 11)&&(c != 11)&&(d != 11))){
+                    if(a>10){
+                        a = a-9;
+                        b = b-9;
+                        c = c-9;
+                        d = d-9;
+                    }
+                    else if(b>10){
+                        b = b-9;
+                        c = c-9;
+                        d = d-9;
+                    }
+                    else if(c>10){
+                        c = c-9;
+                        d = d-9;
+                    }
+                    else{
+                        d = d-9;
+                    }
+                }
+                let element1 = "n"+a;
+                let element2 = "n"+b;
+                let element3 = "n"+c;
+                let element4 = "n"+d;
+                console.log(element1,element2,element3,element4);
+                let check = 2;
+                for(check=2;check<11;check++){
+                    if((check != a)&&(check != b)&&(check != c)&&(check != d)){
+                        let element_remain = "n"+check;
+                        let change_point = document.getElementById(element_remain);
+                        change_point.style.display = "none";
+                    }
+                }
+                let change1 = document.getElementById(element1);
+                change1.style.display = "inline-block";
+                let change2 = document.getElementById(element2);
+                change2.style.display = "inline-block";
+                let change3 = document.getElementById(element3);
+                change3.style.display = "inline-block";
+                let change4 = document.getElementById(element4);
+                change4.style.display = "inline-block";
+                change1.style.transform = dim_direction[0];
+                change2.style.transform = dim_direction[1];
+                change3.style.transform = dim_direction[2];
+                change4.style.transform = dim_direction[3];
+                a = d+1;
+                b = d+2;
+                c = d+3;
+                d = d+4;
+                check = 2;
+            }, 2000);
+            
+        </script>
+        <!-- <script>
+                let string = document.getElementById('inputplace').value;
+                document.getElementById('inputplace').value = '';
+                if(string == ''){
+                    alert('Enter the name of event');
+                }
+                else{
+                    //making close option to event
+                    let closetag = document.createElement('SPAN');
+                    closetag.setAttribute('class','close');
+                    closetag.innerHTML = '&#x00D7;';
+                    //adding event listner to the close, on click
+                    closetag.addEventListener("click", function() {
+                        var forparent = this.parentElement;
+                        forparent.style.display = "none";
+                    });
+                    //making complete option to event
+                    let donetag = document.createElement('SPAN');
+                    donetag.setAttribute('class','donesymbol');
+                    //making the event
+                    let newitem = document.createElement('P');
+                    newitem.innerHTML = string;
+                    newitem.setAttribute('class','eventscp');
+                    //just add close option to event
+                    newitem.appendChild(closetag);
+                    //just add complete option to event
+                    newitem.appendChild(donetag);
+                    //add event listner for the complete option
+                    newitem.addEventListener('click',function(){
+                        let child = this.childNodes;
+                        if(child[2].style.display == 'none'){
+                            child[2].style.display = 'inline';
+                        }
+                        else{
+                            child[2].style.display = 'none';
+                        }
+                    })
+                    //just add the elevent
+                    document.body.appendChild(newitem);
+                }
+            }
+    
+        </script> -->
+    </body>
+</html>

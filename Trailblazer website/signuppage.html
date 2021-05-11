@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Our company 'Trailblazers' is contributing to SHM by using ML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ashok_Jangir(19CE10012)">
+        <title>Trail Blazers</title>
+        <link rel="Shortcut icon" href="./iconofweb.ico">
+        <style>
+            body{
+                background-image:url('./signup_bg1.jpg');
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            #whole_page{
+                background-image:url('./signup_bg.jpg');
+                background-size:cover;
+                position:absolute;
+                top:10vw;
+                left:15vw;
+                width:70vw;
+                height:35vw;
+                border-radius:1vw;
+            }
+            #welcome_part{
+                display:inline-block;
+                width:34vw;
+                height:35vw;
+            }
+            #sign_main{
+                display:inline-block;
+                position:absolute;
+                top:0vw;
+                width:34vw;
+                height:35vw;
+                background-color:white;
+            }
+            .c_t_i{
+                border:none;
+                border-bottom:0.1vw solid crimson;
+                margin-bottom:2vw;
+                margin-top:0.3vw;
+                padding-right:7vw;
+                font-size:1.2vw;
+                background-color:white;
+            }
+            .c_t_l{
+                font-size:1.3vw;
+                margin-bottom:1vw;
+            }
+            #add_this{
+                font-size:1.5vw;
+                text-align:center;
+                color:crimson;
+                padding-top:4vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="whole_page">
+            <div id="welcome_part">
+                <div style="text-align:center;font-size:3vw;margin-top:12vw;">Welcome</div>
+                <div style="font-size:2vw;text-align:center;padding-top:3vw;">To the Trailblazers Family</div>
+                <div id="add_this"></div>
+            </div>
+            <div id="sign_main">
+                <div style="text-align:center;font-size:2.5vw;color:crimson;margin:2vw 0vw;">Sign Up</div>
+                <div id="form_data">
+                <form style="margin-left:7vw;" method="dialog">
+                    <label class="c_t_l" for="name_cand">Name :</label><br>
+                    <input class="c_t_i" type="text" id="name_cand" name="customer_name" required><br>
+                    <label class="c_t_l" for="email_cand">Email :</label><br>
+                    <input class="c_t_i" type="email" id="email_cand" name="customer_email" required><br>
+                    <label class="c_t_l" for="mobile_cand">Mobile :</label><br>
+                    <input class="c_t_i" type="tel" id="mobile_cand" name="customer_mobile" required><br>
+                    <label class="c_t_l" for="password_cand">Password :</label><br>
+                    <input class="c_t_i" type="password" id="password_cand" name="customer_password" required><br>
+                    <input onclick="add_on()" style="margin-left:7vw;font-size:1.5vw;margin-top:2vw;background-color:crimson;color:white;padding:0.5vw 1vw;cursor:pointer;" type="submit" name="Submit">
+                </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            function add_on(){
+                let name = document.getElementById("name_cand").value;
+                let email = document.getElementById("email_cand").value;
+                let mobile = document.getElementById("mobile_cand").value;
+                let pass = document.getElementById("password_cand").value;
+                console.log(name,email,mobile,pass);
+                if(!((name == '')||(email == '')||(mobile == '')||(pass == ''))){
+                    let add = document.getElementById("add_this");
+                    add.innerHTML = "* Congrates you are now member of Trailblazers.";
+                }
+            }
+        </script>
+    </body>
+</html>

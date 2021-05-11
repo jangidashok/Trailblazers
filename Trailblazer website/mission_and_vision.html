@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Our company 'Trailblazers' is contributing to SHM by using ML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ashok_Jangir(19CE10012)">
+        <title>Trail Blazers</title>
+        <link rel="Shortcut icon" href="./iconofweb.ico">
+        <style>
+            #sticktotop{
+                position:fixed;
+                top:0vw;
+                left:0.2vw;
+                width: 98.5vw;
+                height: 5vw;
+                border:0.05vw solid black;
+                border-radius:1vw;
+                background-color:white;
+                z-index:5;
+            }
+            #slogan{
+                position:absolute;
+                top: 0.6vw;
+                left: 1.5vw;
+            }
+            #logoplace{
+                position:absolute;
+                top:0vw;
+                left:7.5vw;
+            }
+            #top_option1{
+                position:absolute;
+                top:1.5vw;
+                left:22.5vw;
+                display:inline;
+                font-size:1.5vw;
+            } 
+            #top_option2{
+                position:absolute;
+                top:1.5vw;
+                right:5vw;
+                display:inline;
+                font-size:1.5vw;
+            }
+            .foranchor{
+                text-decoration:none;
+                margin-right:2vw;
+                font-size:1.5vw;
+                color:blue;
+            }
+            .logsign{
+                text-decoration:none;
+                color:white;
+                font-size:1.5vw;
+                display:inline-block;
+                width:8vw;
+                text-align:center;
+                background-color:red;
+                margin-left:2vw;
+                border-radius:1vw;
+                border:0.25vw solid black;
+            }
+            .logsign:hover{
+                background-color:crimson;
+            }
+            .img_bg{
+                width:98.4vw;
+                height:45vw;
+            }
+            .for_heading{
+                text-align:center;
+                padding-top:5vw;
+                font-size:4vw;
+                text-shadow:0.1vw 0.1vw crimson;
+            }
+            #vision{
+                background-image:url('./vision_img.jpg');
+                background-size:cover;
+            }
+            #vision_discription{
+                font-size:2vw;
+                color:white;
+                border:1px solid black;
+                display:inline-block;
+                width:70vw;
+                padding:5vw;
+                margin:5vw;
+                margin-left:10vw;
+                background-color:crimson;
+                opacity:0.9;
+                text-align:justify;
+            }
+            #mission{
+                background-image:url('./mission_img1.jpg');
+                background-size:cover;
+            }
+            .mission_common{
+                display:inline-block;
+                width:25vw;
+                padding:3vw;
+                box-sizing:border-box;
+                border:2px solid black;
+                border-radius:2vw;
+                font-size:2vw;
+                color:white;
+                margin-bottom: 2vw;
+                margin-top: 8vw;
+                background-color:crimson;
+                opacity:0.9;
+            }
+            #mission_discription1{
+                margin-left:7.5vw;
+            }
+            #mission_discription2{
+                margin-left:4.5vw;
+            }
+            #mission_discription3{
+                margin-left:5vw;
+            }
+            #objective_column{
+                background-image:url('./objective_bg.jpg');
+                background-size:cover;
+                padding-bottom:2vw;
+            }
+            #footer{
+                background-color:crimson;
+                color:white;
+                position:relative;
+                height:15vw;
+            }
+            .icon_class{
+                width:2vw;
+                height:2vw;
+            }
+            #contact_us{
+                display:inline-block;
+                position:absolute;
+                top:-1vw;
+                left:2vw;
+                width:40vw;
+                margin-left:3vw;
+                margin-top:3vw;
+            }
+            #follow_us{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:46vw;
+            }
+            #more_about{
+                display:inline-block;
+                width:20vw;
+                position:absolute;
+                top:2vw;
+                left:80vw;
+            }
+            .footer_heading{
+                font-size:1.75vw;
+                margin-bottom:1vw;
+            }
+            .footer_explain{
+                font-size:1.5vw;
+                margin-bottom:0.5vw;
+            }
+            #about_company_part{
+                background-image:url('./company_bg.png');
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            .service_hover{
+                display:inline-block;
+                width:13vw;
+                height:2vw;
+                background-color:crimson;
+                font-size:1.4vw;
+                padding:0.7vw;
+                border:1px solid white;
+                text-decoration:none;
+                color:white;
+            }
+            #product_down{
+                display:none;
+                position:absolute;
+                top:1.9vw;
+                padding-top:1.65vw;
+            }
+            #down_here:hover #product_down{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sticktotop">
+            <!-- <img src="./slogan_img.png" style="width:10vw;height:4vw;" id="slogan"> -->
+            <div id="logoplace"><img src="./logo.png" style="width:7vw;height:5vw;"> </div>
+            <div id="top_option1">
+                    <a href="./index.html" class="foranchor">Home</a>
+                    <div style="display:inline-block;"  id="down_here" href="#product_part" class="foranchor">Service &#x25BE;
+                        <div id="product_down">
+                            <a class="service_hover" href="./product.html">Our Product</a><br>
+                            <a class="service_hover" href="./mission_and_vision.html">Our Mission&Vision</a>
+                        </div>
+                    </div>
+                    <a href="./technical_part.html" class="foranchor">Technical Part</a>
+                    <a href="./aboutus.html" class="foranchor">Our Team</a>
+                    <a href="./about_company.html" class="foranchor">About Company</a>
+            </div>
+            <div id="top_option2">
+                <a href="./login.html" class="logsign">Login</a>
+                <a href="./signuppage.html" class="logsign">Sign-Up</a>
+            </div>
+        </div>
+        <div id="vision" style="margin-top:5vw;">
+            <div class="for_heading" style="color:white;background-color:rgb(96, 101, 122);padding-bottom:5vw;">Our Mission</div>
+            <div id="vision_discription">Our Mission is to provide safety measures to the structures we go in and out of
+                every day, taking care of it prioritizing customer safety, satisfaction and
+                sustainability as a result.</div>
+        </div>
+        <hr>
+        <div id="mission">
+            <div class="for_heading" style="color:black;background-color:yellow;padding-bottom:5vw;">Our Vision</div>
+            <div id="mission_discription3" class="mission_common">
+                As a company, and as individuals, we value integrity, honesty, openness,
+                personal excellence, constructive self-criticism, continual self-improvement, and
+                mutual respect. We are committed to our customers and partners and have a
+                passion for technology.
+            </div>
+            <div id="mission_discription2" class="mission_common">
+                Trailblazers is a company of people dedicated to delivering best-value services
+                and solutions to help clients identify and manage risks to natural and built
+                environments using innovative applications of science and technology.
+            </div>
+            <div id="mission_discription1" class="mission_common"> We take on big challenges, and pride ourselves on
+                seeing them through. We hold ourselves accountable to our customers,
+                shareholders, partners, and employees by honouring our commitments, providing
+                results, and striving for the highest quality.  
+            </div>
+            <hr>
+        </div>
+        <div id="objective_column">
+            <div class="for_heading" style="color:black;background-color:rgb(202, 223, 226);padding-bottom:5vw;">Motivation and Objectives</div>
+            <div style="margin:2vw 10vw;font-size:2vw;background-color:crimson;opacity:0.9;padding:2vw 4vw;color:white;text-align:justify;">With an advent of all new structures coming up and while India is competing in today’s
+                competitive global market, one cannot lose track of the stock that India has in older
+                structures. These have known or unknown deficiencies and will not be identified unless
+                a disaster is experienced. However, it is too late then with a tremendous human loss on
+                hand and the figure-pointing to easy targets. This leads to the present state of the poor
+                affairs and needs careful consideration to be proactive to conduct health monitoring and
+                provide proper solutions.<br>
+                Structural health monitoring (SHM) in general sense is a process aimed at providing
+                accurate and timely information about the condition and performance of a structure. A
+                need for SHM arises with the fact that properties of both concrete and steel depend on
+                a large number of factors which are often hard to predict in practice. SHM helps is to
+                monitor the in-situ behaviour of a structure accurately and efficiently, to assess its
+                performance under various service loads, to detect damage or deterioration, and to
+                determine the health of the structure. By just a small adjustment to the construction, a
+                safer life is possible.
+            </div>
+        </div>
+        <div id="footer">
+            <div id="contact_us">
+                <div class="footer_heading">Contact Us</div>
+                <div class="footer_explain"><img src="./address_icon.png" class="icon_class"> Main Building,IIT Kharagpur</div>
+                <div class="footer_explain"><img src="./call_icon.png" class="icon_class"> Phone:311 12 68 347</div> 
+                <div class="footer_explain"><img src="./email_icon.png" class="icon_class"> E-mail:trailblazers@gmail.com
+                </div>
+            </div>
+            <div id="follow_us">
+                <div class="footer_heading">Follow Us</div>
+                <div>
+                    <img src="./twitter_icon.png" class="icon_class">
+                    <img src="./fb_icon.png" class="icon_class">
+                    <img src="./insta_icon.png" class="icon_class">
+                </div>
+            </div>
+            <div id="more_about">
+                <div class="footer_heading">About Us</div>
+                <a href="./aboutus.html" style="text-decoration:none;color:white;font-size:1.5vw;">Team</a><br>
+                <a href="./about_company.html" style="text-decoration:none;color:white;font-size:1.5vw;">Company</a>
+            </div>
+        </div>
+    </body>
+</html>
